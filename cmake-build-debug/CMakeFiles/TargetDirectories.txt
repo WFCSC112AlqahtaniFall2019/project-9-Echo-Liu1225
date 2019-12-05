@@ -1,0 +1,3 @@
+/Users/Echo/CLionProjects/project-9-Echo-Liu1225/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Echo/CLionProjects/project-9-Echo-Liu1225/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Echo/CLionProjects/project-9-Echo-Liu1225/cmake-build-debug/CMakeFiles/Project9.dir
