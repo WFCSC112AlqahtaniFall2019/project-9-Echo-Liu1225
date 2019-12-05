@@ -144,7 +144,7 @@ void Quicksort(vector<T>& numbers, int i, int k) {
 int main() {
 
     ifstream inFile;
-    inFile.open("../CleanedTrafficData.csv");
+    inFile.open("Traffic.csv");
     if(!inFile.is_open()) {
         cout << "file does not exist";
         return 1;
@@ -284,6 +284,48 @@ int main() {
     mergeSort(intV_M, IntTemp, 0, intV_M.size()-1);
     clock_t end_mergeSortInt2 = clock();
 
+
+    cout<<"bubbleSort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<intV_B.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"selection sort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<intV_S.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"Quicksort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<intV_S.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"mergeSort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<intV_M.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"Data"<<endl;
+    cout<<"bubbleSort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<dataV_B.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"selection sort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<dataV_S.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"Quicksort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<dataV_S.at(j)<<" ";
+    }
+    cout<<endl;
+    cout<<"mergeSort"<<endl;
+    for(int j=0;j<n;j++){
+        cout<<dataV_M.at(j)<<" ";
+    }
+    cout<<endl;
 
     double elapsed_bubbleSortData2 = double(end_bubbleSortData2 - start_bubbleSortData2) / CLOCKS_PER_SEC;
     double elapsed_bubbleSortInt2 = double(end_bubbleSortInt2 - start_bubbleSortInt2) / CLOCKS_PER_SEC;
